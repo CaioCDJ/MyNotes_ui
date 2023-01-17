@@ -1,0 +1,38 @@
+
+main{
+  height: 90vh;
+  flex-flow: column;
+}
+
+form{
+  height: auto;
+  width: 35%;
+  flex-flow: column;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333;
+}
+form>*{
+  background: #333;
+  margin-top: 10px;
+}
+
+form input{
+  height: 60px;
+  width: 80%;
+  background-color: #222;
+  border-radius: 5px;
+  padding-inline: 10px;
+}
+
+form p{
+  margin-top: 30px;
+}
+
+.formBtn{
+  font-size: 20px;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+

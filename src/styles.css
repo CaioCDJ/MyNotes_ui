@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+  background-color: #222;
+  color: #f4f4f4;
+  list-style: none;
+  border: none;
+  padding: none;
+}
+
+/*-- generic classes --*/
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
