@@ -3,11 +3,32 @@ main{
   width: 100%;
 }
 
-section{
-  height: 100vh;
-  max-width: 1300px;
-}
-
 #intro{
   flex-flow: column;
+   padding-inline: 30px;
+}
+
+h1{
+  font-size: 80px;
+  letter-spacing: 2px;
+  font-style: italic;
+  font-weight: 900;
+  width: 70%;
+  line-break: normal;
+  margin: 0;
+}
+
+#intro div{
+  width: 100%;
+  text-align: left;
+  font-size: 30px;
+}
+
+#account{
+  flex-flow: row-reverse;
+  padding: 10px;
+}
+
+#account div{
+  width: 50%;
 }
