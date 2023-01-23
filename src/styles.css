@@ -1,7 +1,9 @@
+@import "~prismjs/themes/prism-okaidia";
+
 :root{
   --titleColor: #DADADA;
   --textColor: #A3A3A3;
-  --background: #1E1E1E;
+  --background: #181A1B;
   --navBackground: #262626;
   --hoover: #363636;
 }

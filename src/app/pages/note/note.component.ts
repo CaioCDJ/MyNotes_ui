@@ -5,6 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './note.component.html',
   styleUrls: ['./note.component.css']
 })
-export class NoteComponent {
 
+export class NoteComponent {
+ 
+  
 }
