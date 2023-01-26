@@ -1,4 +1,4 @@
-import { AfterViewChecked, AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
+import { EventEmitter, Output, AfterViewChecked, AfterViewInit, Component, ElementRef, OnDestroy, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { fromEvent, Subscription } from 'rxjs';
 import { PrismService } from 'src/app/services/prism.service';
@@ -10,6 +10,10 @@ import { PrismService } from 'src/app/services/prism.service';
 })
 
 export class TextHighlightComponent  implements OnInit, AfterViewChecked, AfterViewInit, OnDestroy {
+
+
+  @Output() changeText: EventEmitter<string> = new EventEmitter();
+
 
   @ViewChild('textArea', { static: true })
   textArea!: ElementRef;
@@ -62,10 +66,11 @@ export class TextHighlightComponent  implements OnInit, AfterViewChecked, AfterV
  
   private ListenForm(){
     this.sub = this.form.valueChanges.subscribe((val:any)=>{
-    
-      console.log(val.content)
+      
       const modifiedContent = this.prismService.convertHtmlToSting(val.content);
       
+      this.changeText.emit(val.content);
+
       this.render.setProperty(this.codeContent.nativeElement, 'innerHTML', modifiedContent);      
     
       this.highlighted = true;

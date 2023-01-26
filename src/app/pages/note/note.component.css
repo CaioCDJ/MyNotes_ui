@@ -1,9 +1,32 @@
-*{
+#page{
   overflow-y: hidden;
   overflow-x: hidden;
+  display: flex;
+  flex-flow: row;
+}
+
+aside{
+  width: 200px;
+}
+
+#topBar{
+  height: 35px;
+  background: red;
 }
 
 main{
   display: flex;
   flex-flow: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#content{
+  flex-flow: row;
+  height: 100%;
+}
+
+#content>*{
+  width: 50%;
+  height: 100%;
 }

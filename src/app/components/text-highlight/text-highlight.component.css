@@ -1,9 +1,13 @@
+form{
+  height: 100%;
+}
 .code-container {
   max-width: 1000px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   min-height: 150px;
+  height: 100%;
 }
 .text-area-code-editor, .text-area-code-editor:focus {
   box-shadow: none;

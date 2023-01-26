@@ -1,23 +1,25 @@
- 
-<aside>
+<app-navbar></app-navbar>
+
+<div id="page">
+
+  <aside>
+
+  </aside>
+
+  <main>
+    <!-- mini menu with info about the note -->
+
+    <div id="topBar">
+
+    </div>
+
+    <div id="content" class="center">
+      <app-text-highlight (changeText)="onChangeText($event)"></app-text-highlight>
+
+      <!-- higlignt -->
+      <markdown [data]="text"></markdown>
+    </div>
 
 
-</aside>
-
-<main>
-
-  <!-- mini menu with info about the note -->
-  
-  <div>
-    
-  </div>
-
-  <div>
-    <app-text-highlight></app-text-highlight>
-    
-    <!-- higlignt -->
-    <markdown [data]="data"></markdown>
-  </div>
-
-
-</main>
+  </main>
+</div>

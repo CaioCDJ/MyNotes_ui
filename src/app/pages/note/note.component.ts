@@ -9,16 +9,19 @@ import { KatexOptions } from 'ngx-markdown';
 
 export class NoteComponent {
 
+
+  public text: string = "";
+
   public options: KatexOptions = {
     displayMode: true,
     throwOnError: false,
     errorColor: '#cc0000',
   }
 
-  public data: string = `
-    # Fatos Oliver
-      1. É boxer
-      2. tem mais de 3 meses de idade
-      3. gosta de pao`;
+  onChangeText(textChange: string){
+    console.log(textChange);
+    this.text  = textChange;
+  }
+
 
 }
