@@ -63,6 +63,7 @@ export class TextHighlightComponent  implements OnInit, AfterViewChecked, AfterV
   private ListenForm(){
     this.sub = this.form.valueChanges.subscribe((val:any)=>{
     
+      console.log(val.content)
       const modifiedContent = this.prismService.convertHtmlToSting(val.content);
       
       this.render.setProperty(this.codeContent.nativeElement, 'innerHTML', modifiedContent);      

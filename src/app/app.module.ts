@@ -16,6 +16,7 @@ import { AccountComponent } from './pages/account/account.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TextHighlightComponent } from './components/text-highlight/text-highlight.component';
 import { MarkdownViewerComponent } from './components/markdown-viewer/markdown-viewer.component';
+import { MarkdownComponent, MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,13 @@ import { MarkdownViewerComponent } from './components/markdown-viewer/markdown-v
     SectionComponent,
     AccountComponent,
     TextHighlightComponent,
-    MarkdownViewerComponent
+    MarkdownViewerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+footer{
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+#develop{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
