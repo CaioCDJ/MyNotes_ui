@@ -8,12 +8,16 @@
 }
 
 *{
+  list-style: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body{
   background-color: var(--background);
   color: var(--textColor);
-  list-style: none;
-  border: none;
-  padding: none;
-  overflow-x: hidden;
 }
 
 h1,h2,h3,h4{

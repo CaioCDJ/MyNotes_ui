@@ -8,10 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HowToUseComponent } from './pages/how-to-use/how-to-use.component';
 import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { HomeComponent } from './pages/home/home.component';
-import { SectionComponent } from './components/section/section.component';
 import { AccountComponent } from './pages/account/account.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TextHighlightComponent } from './components/text-highlight/text-highlight.component';
@@ -27,9 +25,7 @@ import { ClipboardOptions, MarkdownComponent, MarkdownModule } from 'ngx-markdow
     NoteComponent,
     NavbarComponent,
     FooterComponent,
-    HowToUseComponent,
     SignUpComponent,
-    SectionComponent,
     AccountComponent,
     TextHighlightComponent,
     MarkdownViewerComponent,
