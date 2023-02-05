@@ -16,7 +16,7 @@ import { AccountComponent } from './pages/account/account.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TextHighlightComponent } from './components/text-highlight/text-highlight.component';
 import { MarkdownViewerComponent } from './components/markdown-viewer/markdown-viewer.component';
-import { MarkdownComponent, MarkdownModule } from 'ngx-markdown';
+import { ClipboardOptions, MarkdownComponent, MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,11 @@ import { MarkdownComponent, MarkdownModule } from 'ngx-markdown';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    MarkdownModule.forRoot()
+    MarkdownModule.forRoot({
+      clipboardOptions:{
+        provide: ClipboardOptions,
+      }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,13 +5,42 @@
   flex-flow: row;
 }
 
-aside{
-  width: 200px;
+ul{
+  margin: 0;
+  padding: 0;
 }
+
+aside{
+  width: 250px;
+  background: #ddd8d8;
+  overflow-y: auto;
+  height: 96vh;
+}
+
+#menu{
+  height: 40px;
+  background-color: #f1f1f1;
+}
+
+.item button{
+  padding-inline: 5px;
+  font-size: 1rem;
+  color: var(--textColor);
+  height: 40px;
+  width: 100%;
+}
+
+.item button:hover{
+  
+}
+
+.item button:active{
+  background-color: #444;
+} 
 
 #topBar{
   height: 35px;
-  background: red;
+  background: #ddd8d8;
 }
 
 main{

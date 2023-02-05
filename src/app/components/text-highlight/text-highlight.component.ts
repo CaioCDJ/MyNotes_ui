@@ -26,10 +26,6 @@ export class TextHighlightComponent  implements OnInit, AfterViewChecked, AfterV
   highlighted = false;
   codeType = 'markdown'
 
-  text = `
-    var oliver = boxer
-  `
-
   form = this.fb.group({
     content: ''
   })

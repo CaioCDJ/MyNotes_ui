@@ -3,6 +3,24 @@
 <div id="page">
 
   <aside>
+    
+    <div id="menu">
+      
+    </div>
+    
+    <div id="items">
+      <ul>
+        
+        <li class="item">
+          <button type="menu">Oliber</button>
+        </li>
+        <li class="item"><button type="menu">Oliber</button></li>
+        <li class="item"><button type="menu">Oliber</button></li>
+        <li class="item"><button type="menu">Oliber</button></li>
+        <li class="item"><button type="menu">Oliber</button></li>
+
+      </ul> 
+    </div>
 
   </aside>
 
@@ -17,9 +35,12 @@
       <app-text-highlight (changeText)="onChangeText($event)"></app-text-highlight>
 
       <!-- higlignt -->
-      <markdown [data]="text"></markdown>
+      <markdown 
+        lineHighlight
+        clipboard
+        ngPreserveWhitespaces
+        [data]="text"></markdown>
     </div>
-
 
   </main>
 </div>
